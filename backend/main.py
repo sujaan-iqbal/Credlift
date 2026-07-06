@@ -15,7 +15,7 @@ from models import ImpactEnum, GapStatusEnum, OfferStatusEnum
 import schemas
 import engine_bridge
 
-app = FastAPI(title="Softlend Backend API")
+app = FastAPI(title="CreditLift Backend API")
 
 # ==========================
 # CORS MIDDLEWARE

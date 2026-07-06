@@ -108,7 +108,7 @@ function App() {
   return (
     <div className="App" style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
       <header style={{ textAlign: 'center', marginBottom: '30px' }}>
-        <h1>🏦 Softlend Dashboard</h1>
+        <h1>🏦 CreditLift Dashboard</h1>
         <p>Loan Marketplace & Credit Improvement Engine</p>
       </header>
 
@@ -139,7 +139,7 @@ function App() {
       }}>
         <h3 style={{ marginTop: 0, color: '#e65100' }}>📋 CIBIL / Experian Score Simulator</h3>
         <p style={{ fontSize: '14px', color: '#555' }}>
-          In production, Softlend fetches this data from credit bureaus. For this demo, enter a score and click "Fetch Report" to simulate the bureau fetch.
+          In production, CreditLift fetches this data from credit bureaus. For this demo, enter a score and click "Fetch Report" to simulate the bureau fetch.
         </p>
         <div style={{ display: 'flex', gap: '15px', alignItems: 'center', flexWrap: 'wrap' }}>
           <label>
