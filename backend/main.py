@@ -22,7 +22,9 @@ app = FastAPI(title="CreditLift Backend API")
 # ==========================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000",          # Local React
+        "https://credlift.vercel.app"     # Live Frontend
+],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
