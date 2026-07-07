@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://credlift-3hoq.onrender.com/',
+  baseURL: 'https://credlift-3hoq.onrender.com',
 });
 
 export const fetchCreditProfile = (customerId) => API.get(`/customers/${customerId}/credit-profile`);
