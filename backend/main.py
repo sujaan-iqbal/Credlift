@@ -20,14 +20,17 @@ app = FastAPI(title="CreditLift Backend API")
 # ==========================
 # CORS MIDDLEWARE
 # ==========================
+from fastapi.middleware.cors import CORSMiddleware
+
+origins = [
+    "http://localhost:3000",
+    "https://credlift-amot4j5ue-sujaan-iqbals-projects.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://credlift.vercel.app",
-        "https://credlift-o041dbx7q-sujaan-iqbals-projects.vercel.app",
-        "http://localhost:3000",
-    ],
-    allow_credentials=False,
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
