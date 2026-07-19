@@ -27,7 +27,7 @@ gap_rules:
   - id: short_credit_age
     field: credit_age_months
     operator: lt
-    value: 35
+    value: 36
     impact: medium
     estimated_score_gain: 10
     action_template: "Avoid closing old accounts - your oldest account is only {current_value} months old"
